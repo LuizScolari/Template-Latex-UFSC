@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% Configuração da página
+\geometry{a4paper, margin=2.5cm}
+\setstretch{1.5}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+% Variáveis personalizáveis
+\newcommand{\nomeAluno}{NOME DO ALUNO}
+\newcommand{\matricula}{MATRÍCULA}
+\newcommand{\nomeProfessor}{NOME DO PROFESSOR}
+\newcommand{\disciplina}{NOME DA DISCIPLINA}
+\newcommand{\tituloTrabalho}{TÍTULO DO TRABALHO}
+\newcommand{\dataEntrega}{DATA DE ENTREGA}
+\newcommand{\logoFaculdade}{logo_ufsc.png} % Substitua pelo caminho do seu logo
+
+% Início do documento
+\begin{document}
+
+% Capa
+\begin{titlepage}
+    \begin{center}
+        \includegraphics[width=0.3\textwidth]{\logoFaculdade} \\[1cm]
+        {\large UNIVERSIDADE FEDERAL DE SANTA CATARINA}\\[0.5cm]
+        {\large \disciplina}\\[3cm]
+        {\LARGE \textbf{\tituloTrabalho}}\\[3cm]
+        \begin{flushright}
+            \textbf{Aluno(a):} \nomeAluno\\
+            \textbf{Matrícula:} \matricula\\
+            \textbf{Professor(a):} \nomeProfessor\\
+            \textbf{Data:} \dataEntrega\\
+        \end{flushright}
+        \vfill
+        {\large Local – Ano}
+    \end{center}
+\end{titlepage}
+
+% Sumário
+\tableofcontents
+\newpage
+
+% Introdução
+\section{Introdução}
+\subsection{Contextualização}
+Texto de exemplo para contextualização.
+
+\subsection{Objetivos}
+Texto de exemplo para os objetivos.
+
+% Desenvolvimento
+\section{Desenvolvimento}
+\subsection{Revisão de Literatura}
+Texto de exemplo com referência~\cite{livro_exemplo}.
+
+\subsection{Metodologia}
+Texto de exemplo para metodologia.
+
+\subsection{Análise dos Resultados}
+Texto de exemplo para análise.
+
+% Conclusão
+\section{Conclusão}
+\subsection{Resumo dos Resultados}
+Texto de exemplo para resumir os achados.
+
+\subsection{Trabalhos Futuros}
+Texto de exemplo para sugestões futuras.
+
+% Referências
+\addcontentsline{toc}{section}{Referências}
+\begin{thebibliography}{9}
+
+\bibitem{livro_exemplo}
+Autor Exemplo.
+\textit{Título do Livro}.
+Editora Exemplo, 2020.
+
+\bibitem{artigo_exemplo}
+Autor do Artigo.
+\textit{Título do Artigo}.
+Revista Acadêmica, v.10, n.2, p.100-110, 2022.
+
+\end{thebibliography}
+
+\end{document}
